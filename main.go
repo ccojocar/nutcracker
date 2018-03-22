@@ -125,7 +125,7 @@ func main() {
 	}()
 
 	for token := range resultCh {
-		fmt.Printf("Found Token: %s\n", token)
+		fmt.Printf("Valid Token: %s\n", token)
 	}
 	fmt.Println("Brute force attack completed!")
 }
