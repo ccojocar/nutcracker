@@ -28,7 +28,7 @@ You can brute force a hexadecimal secret of 16 characters as follows:
 $> nutcracker -url https://<URL> -token-length 16 -parallel-attacks 8
 ```
 
-As soon as a valid token is found, the tool will print it into the console:
+The tool will print into the console the valid token when the brute force attack is completed.
 
 ```
 Valid Token: <token value>
