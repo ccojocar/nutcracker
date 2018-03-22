@@ -83,6 +83,8 @@ func attack(URL string, alphabet string, tokenLength int, parallelAttacks int, r
 						resultCh <- token
 					} else if statusCode == http.StatusTooManyRequests {
 						fmt.Println("Rate limit reached!")
+					} else {
+						fmt.Printf("Tried token: %s. HTTP Status: %d\n", token, statusCode)
 					}
 				}
 
@@ -124,8 +126,14 @@ func main() {
 		}
 	}()
 
+	tokens := make([]string, 0)
 	for token := range resultCh {
+		tokens = append(tokens, token)
+	}
+
+	for _, token := range tokens {
 		fmt.Printf("Valid Token: %s\n", token)
 	}
+
 	fmt.Println("Brute force attack completed!")
 }
