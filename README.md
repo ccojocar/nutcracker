@@ -1,4 +1,4 @@
-#nutcracker
+# nutcracker
 
 Tool to crack hexadecimal secrets which are used as bearer tokens (not a good idea!).
 
