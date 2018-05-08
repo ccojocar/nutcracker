@@ -5,7 +5,7 @@ Tool to crack hexadecimal secrets which are used as bearer tokens (not a good id
 ## Installation
 
 ```
-go get -u github.com/cosmincojocar/nutcracker
+go get -u github.com/ccojocar/nutcracker
 ```
 
 ## Usage
